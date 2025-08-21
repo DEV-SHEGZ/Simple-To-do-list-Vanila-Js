@@ -1,0 +1,102 @@
+/* General page setup */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+}
+
+/* To-Do container */
+.todo-container {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Heading */
+.todo-container h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333333;
+}
+
+/* Input + Button */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group input::placeholder {
+  color: #999999;
+}
+
+.input-group button {
+  padding: 10px 15px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-group button:hover {
+  background: #3d8b40;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list-item {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  color: #8c8c8c;
+}
+
+ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Delete button */
+.delete {
+  color: #e53935;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete:hover {
+  color: #c62828;
+}
