@@ -1,7 +1,6 @@
 const task = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const list = document.getElementById("taskList");
-
 const listArray = [];
 
 // Add event listener to the button
@@ -23,4 +22,16 @@ addBtn.addEventListener("click", function () {
   list.appendChild(li);
   console.log(li);
   task.value = "";
+
+  //Checkbox event listener
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
+      list.removeChild(li);
+    }
+  });
+
+  //Delete btn event listener
+  deleteBtn.addEventListener("click", function () {
+    list.removeChild(li);
+  });
 });
